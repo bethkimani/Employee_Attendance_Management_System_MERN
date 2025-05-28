@@ -7,6 +7,7 @@ const Login = () => {
   const [error, setError] = React.useState(null);
 
   const handleSubmit = async (e) => {
+    const {user} = React.useContext(userContext);
     e.preventDefault();
     setError(null); // Clear previous errors
     try {
