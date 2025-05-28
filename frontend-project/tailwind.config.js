@@ -4,6 +4,12 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  theme: {
+    extend: {
+      fontFamily: {
+        pacifico: ["Pacifico", "cursive"], // Corrected syntax: key-value pair with fallback
+      },
+    },
+  },
   plugins: [],
-}
-
+};
